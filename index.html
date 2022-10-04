@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <a-scene>
+        <a-plane
+        src = "https://st2.depositphotos.com/5723466/8465/i/950/depositphotos_84651874-stock-photo-stone-floor-texture.jpg" 
+        rotation="-90 0 0" 
+        width="60" 
+        height="60"</a-plane></a-plane>
+            <a-sphere 
+            src="https://i.imgur.com/mYmmbrp.jpg" 
+            position="0 1 0" 
+            animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"></a-sphere>
+                <a-sphere 
+                src="https://i.imgur.com/mYmmbrp.jpg" 
+                position="-3 4 0" 
+                animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"></a-sphere>
+                    <a-sphere 
+                    src="https://i.imgur.com/mYmmbrp.jpg" 
+                    position="3 4 0" 
+                    animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true"></a-sphere>
+                        <a-sphere 
+                        color = "green"
+                        position="0 6 0"> 
+                        </a-sphere>
+                            <a-sphere src="https://i.imgur.com/mYmmbrp.jpg" 
+                            position="6 8 0" 
+                            animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
+                            </a-sphere>
+                            <a-sphere src="https://i.imgur.com/mYmmbrp.jpg" 
+                            position="-6 8 0" 
+                            animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
+                            </a-sphere>
+                                <a-sphere src="https://i.imgur.com/mYmmbrp.jpg" 
+                                position="9 11 0" 
+                                animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
+                                </a-sphere>
+                                <a-sphere src="https://i.imgur.com/mYmmbrp.jpg" 
+                                position="-9 11 0" 
+                                animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
+                                </a-sphere>
+                                    <a-cylinder
+                                    color = "brown"
+                                    position="-16 3 -10"
+                                    height="40">
+                                    </a-cylinder>
+                                    <a-cylinder
+                                    color = "brown"
+                                    position="16 3 -10"
+                                    height="40">
+                                    </a-cylinder>
+                                        <a-cylinder
+                                        color = "brown"
+                                        position="-24 3 8"
+                                        height="40">
+                                        </a-cylinder>
+                                        <a-cylinder
+                                        color = "brown"
+                                        position="24 3 8"
+                                        height="40">
+                                        </a-cylinder>
+                                            <a-cylinder
+                                            color = "brown"
+                                            position="16 3 20"
+                                            height="40">
+                                            </a-cylinder>
+                                            <a-cylinder
+                                            color = "brown"
+                                            position="-16 3 20"
+                                            height="40">
+                                            </a-cylinder>
+                                                <a-cylinder
+                                                color = "brown"
+                                                position="-5 3 -10"
+                                                height="40">
+                                                </a-cylinder>
+                                                <a-cylinder
+                                                color = "brown"
+                                                position="5 3 -10"
+                                                height="40">
+                                                </a-cylinder>
+            <a-entity 
+        environment="preset: japan; 
+        dressingAmount: 10; 
+        ground: hills"></a-entity>
+    </a-scene>
+</body>
+</html>
