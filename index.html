@@ -10,81 +10,100 @@
 </head>
 <body>
     <a-scene>
-        <a-plane>
-        src = "https://st2.depositphotos.com/5723466/8465/i/950/depositphotos_84651874-stock-photo-stone-floor-texture.jpg" 
-        rotation="-90 0 0" 
-        width="60" 
-        height="60"
-        </a-plane>
-            <a-sphere 
+        <!-- ассеты -->
+        <a-assets>
+          <a-asset-item id="alpaca" src="https://cdn.glitch.global/c98cc15a-6411-4cb4-8895-ec47cee5f626/Alpaca.obj?v=1665672954424"></a-asset-item>
+        </a-assets>
+        <!-- предметы и шары-->
+        <a-sphere 
             src="https://i.imgur.com/mYmmbrp.jpg" 
             position="0 1 0" 
             animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
-            </a-sphere>
-                <a-sphere 
-                src="https://i.imgur.com/mYmmbrp.jpg" 
-                position="-3 4 0" 
-                animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
-                </a-sphere>
-                    <a-sphere 
-                    src="https://i.imgur.com/mYmmbrp.jpg" 
-                    position="3 4 0" 
-                    animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
-                    </a-sphere>
-                        <a-sphere 
-                        color = "green"
-                        position="0 6 0"> 
-                        </a-sphere>
-                            <a-sphere src="https://i.imgur.com/mYmmbrp.jpg" 
-                            position="6 8 0" 
-                            animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
-                            </a-sphere>
-                            <a-sphere src="https://i.imgur.com/mYmmbrp.jpg" 
-                            position="-6 8 0" 
-                            animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
-                            </a-sphere>
-                                <a-sphere src="https://i.imgur.com/mYmmbrp.jpg" 
-                                position="9 11 0" 
-                                animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
-                                </a-sphere>
-                                <a-sphere src="https://i.imgur.com/mYmmbrp.jpg" 
-                                position="-9 11 0" 
-                                animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
-                                </a-sphere>
-                                    <a-cylinder
-                                    color = "brown"
-                                    position="-16 3 -10"
-                                    height="40">
-                                    </a-cylinder>
-                                    <a-cylinder
-                                    color = "brown"
-                                    position="16 3 -10"
-                                    height="40">
-                                    </a-cylinder>
-                                            <a-cylinder
-                                            color = "brown"
-                                            position="16 3 20"
-                                            height="40">
-                                            </a-cylinder>
-                                            <a-cylinder
-                                            color = "brown"
-                                            position="-16 3 20"
-                                            height="40">
-                                            </a-cylinder>
-                                                <a-cylinder
-                                                color = "brown"
-                                                position="-5 3 -10"
-                                                height="40">
-                                                </a-cylinder>
-                                                <a-cylinder
-                                                color = "brown"
-                                                position="5 3 -10"
-                                                height="40">
-                                                </a-cylinder>
+        </a-sphere>
+        <a-sphere 
+            src="https://i.imgur.com/mYmmbrp.jpg" 
+            position="-3 4 0" 
+            animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
+        </a-sphere>
+        <a-sphere 
+            src="https://i.imgur.com/mYmmbrp.jpg" 
+            position="3 4 0" 
+             animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
+        </a-sphere>
+        <a-sphere 
+            color = "green"
+            position="0 6 0"> 
+        </a-sphere>
+        <a-sphere src="https://i.imgur.com/mYmmbrp.jpg" 
+            position="6 8 0" 
+            animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
+        </a-sphere>
+        <a-sphere src="https://i.imgur.com/mYmmbrp.jpg" 
+            position="-6 8 0" 
+            animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
+        </a-sphere>
+        <a-sphere src="https://i.imgur.com/mYmmbrp.jpg" 
+            position="9 11 0" 
+            animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
+        </a-sphere>
+        <a-sphere src="https://i.imgur.com/mYmmbrp.jpg" 
+            position="-9 11 0" 
+            animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; loop: true">
+        </a-sphere>
+        <a-cylinder
+            color = "brown"
+            position="-16 3 -10"
+            height="40">
+        </a-cylinder>
+        <a-cylinder
+            color = "brown"
+            position="16 3 -10"
+            height="40">
+        </a-cylinder>
+        <a-cylinder
+            color = "brown"
+            position="16 3 20"
+            height="40">
+        </a-cylinder>
+        <a-cylinder
+            color = "brown"
+            position="-16 3 20"
+            height="40">
+        </a-cylinder>
+        <a-cylinder
+            color = "brown"
+            position="-5 3 -10"
+            height="40">
+        </a-cylinder>
+        <a-cylinder
+            color = "brown"
+            position="5 3 -10"
+            height="40">
+        </a-cylinder>
+        <!-- модели -->
+        <a-entity
+            obj-model="obj: #alpaca"
+            position="0 0 15"
+            rotation="0 170 0"    
+            animation="property: object3D.position.z; to: 10; dir: alternate; dur: 6000; loop: true">
+        </a-entity>
+        <a-entity
+            obj-model="obj: #alpaca"
+            position="5 0 20"
+            rotation="0 170 0"    
+            animation="property: object3D.position.z; to: 10; dir: alternate; dur: 6000; loop: true">
+        </a-entity>
+        <a-entity
+            obj-model="obj: #alpaca"
+            position="-5 0 20"
+            rotation="0 170 0"    
+            animation="property: object3D.position.z; to: 10; dir: alternate; dur: 6000; loop: true">
+        </a-entity>
+        <!-- пресеты с картой-->
         <a-entity 
-        environment="preset: japan; 
-        dressingAmount: 10; 
-        ground: hills">
+            environment="preset: poison; 
+            dressingAmount: 10; 
+            ground: hills">
         </a-entity>
     </a-scene>
 </body>
